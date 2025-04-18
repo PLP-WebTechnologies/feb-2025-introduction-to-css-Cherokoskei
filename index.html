@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Welcome Page</title>
+    
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #f9fafb;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+
+        #main-title {
+            background-color: #4caf50;
+            color: #fff;
+            padding: 30px 0;
+            margin: 0;
+            text-align: center;
+            font-size: 2.5em;
+            letter-spacing: 1px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .intro {
+            font-size: 1.2em;
+            padding: 20px;
+            margin: 20px auto;
+            width: 80%;
+            background-color: #e8f5e9;
+            border-left: 6px solid #388e3c;
+            border-radius: 6px;
+            max-width: 700px;
+        }
+
+        .styled-image {
+            display: block;
+            margin: 30px auto;
+            padding: 8px;
+            border: 5px solid #81c784;
+            border-radius: 15px;
+            width: 300px;
+            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .styled-image:hover {
+            transform: scale(1.05);
+        }
+
+        .content-box {
+            margin: 40px auto;
+            padding: 25px;
+            border: 2px solid #4caf50;
+            background-color: #f1f8e9;
+            width: 80%;
+            max-width: 700px;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+            text-align: center;
+        }
+
+        .content-box h2 {
+            font-size: 1.8em;
+            color: #388e3c;
+            margin-bottom: 20px;
+        }
+
+        .content-box p {
+            font-size: 1.2em;
+            line-height: 1.6;
+            margin-bottom: 20px;
+            color: #555;
+        }
+
+        .content-box .highlight {
+            font-weight: bold;
+            color: #4caf50;
+        }
+
+        .content-box .note {
+            font-style: italic;
+            color: #388e3c;
+        }
+
+        @media (max-width: 600px) {
+            .styled-image {
+                width: 90%;
+            }
+
+            .intro, .content-box {
+                width: 90%;
+                padding: 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <h1 id="main-title">Welcome to My Page</h1>
+
+    <p class="intro">Hello, I'm a PLP learner and a begginer and I'm creating a page styled with html embedded with CSS to demonstrates the use of margins, padding, and borders to enhance the layout.</p>
+
+    <!-- 📌 Embedded nature image -->
+    <img src="https://upload.wikimedia.org/wikipedia/commons/6/6e/Golde33443.jpg" alt="Nature Image" class="styled-image">
+
+    <div class="content-box">
+        <h2>Learning CSS</h2>
+        <p>I have styled the <span class="highlight">image</span> and the <span class="highlight">content box</span> using CSS. The image has a <strong>border</strong>, <strong>padding</strong>, and a smooth <strong>hover effect</strong>. The content box is separated with <strong>margins</strong> and has a subtle shadow effect.</p>
+        <p class="note">padding adds space inside the content box, and margins create space around an element outside of its border.</p>
+    </div>
+
+</body>
+</html>
